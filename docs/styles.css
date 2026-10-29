@@ -450,3 +450,23 @@ a:hover { text-decoration: underline; }
   pointer-events: none;
 }
 .hero-cta { margin-top: 1.25rem; }
+
+/* Affiliate disclosure CTA */
+.affiliate-cta {
+  margin: 0 auto 1.75rem;
+  padding: 1rem 1.15rem;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.affiliate-cta p { margin: 0 0 0.4rem; }
+.affiliate-cta p:last-child { margin-bottom: 0; }
+.affiliate-cta-link a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+.affiliate-cta-link a:hover { text-decoration: underline; }
+
