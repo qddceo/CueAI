@@ -3,9 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="视频场景 AI 工具推荐 — CueAI" />
+  <meta name="description" content="视频场景 AI 工具推荐 — CueAI：Runway、Pika、CapCut。" />
   <title>视频 — CueAI</title>
+  <link rel="alternate" hreflang="zh-CN" href="https://www.ztlab.art/video.html" />
+  <link rel="alternate" hreflang="en" href="https://www.ztlab.art/en/video.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ztlab.art/" />
+  <link rel="canonical" href="https://www.ztlab.art/video.html" />
   <link rel="stylesheet" href="styles.css" />
+  <script>
+(function(){try{var t=localStorage.getItem('cueai-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
 </head>
 <body>
   <header class="site-header">
@@ -13,18 +20,21 @@
       <a class="logo" href="index.html">Cue<span>AI</span></a>
       <nav class="nav-links">
         <a href="sponsor.html">支持</a>
+        <span class="header-controls">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="切换主题"><span data-theme-label>☀️</span></button>
+          <a class="lang-link" href="video.html" hreflang="zh-CN" aria-current="page">中文</a>
+          <a class="lang-link" href="en/video.html" hreflang="en">English</a>
+        </span>
         <span class="tagline-nav">按场景选对 AI 工具</span>
       </nav>
     </div>
   </header>
-
   <main>
     <div class="page-head wrap">
       <nav class="breadcrumb"><a href="index.html">首页</a> / 视频</nav>
       <h1>🎬 视频</h1>
       <p class="desc">文生视频、短视频剪辑与 AI 特效。成片质量与时长限制变化快，以官网当前能力为准。</p>
     </div>
-
     <section class="tools wrap">
       <article class="tool">
         <div class="tool-top">
@@ -46,7 +56,6 @@
           <a class="btn btn-primary" href="https://runwayml.com/?ref=cueai" target="_blank" rel="noopener noreferrer">官网</a>
         </div>
       </article>
-
       <article class="tool">
         <div class="tool-top">
           <h2>Pika</h2>
@@ -67,7 +76,6 @@
           <a class="btn btn-primary" href="https://pika.art/?ref=cueai" target="_blank" rel="noopener noreferrer">官网</a>
         </div>
       </article>
-
       <article class="tool">
         <div class="tool-top">
           <h2>CapCut（剪映）</h2>
@@ -88,9 +96,9 @@
           <a class="btn btn-primary" href="https://www.capcut.com/?ref=cueai" target="_blank" rel="noopener noreferrer">官网</a>
         </div>
       </article>
+
     </section>
   </main>
-
   <footer class="site-footer">
     <div class="wrap">
       <p><strong>CueAI</strong> · 按场景选对 AI 工具</p>
@@ -100,5 +108,6 @@
       <p class="aff">本站含联盟链接</p>
     </div>
   </footer>
+  <script src="site.js" defer></script>
 </body>
 </html>

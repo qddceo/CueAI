@@ -3,9 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="CueAI 隐私政策" />
+  <meta name="description" content="CueAI 隐私政策：我们如何处理浏览、邮件、Creem 结账与联盟链接相关信息。" />
   <title>隐私政策 — CueAI</title>
+  <link rel="alternate" hreflang="zh-CN" href="https://www.ztlab.art/privacy.html" />
+  <link rel="alternate" hreflang="en" href="https://www.ztlab.art/en/privacy.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ztlab.art/" />
+  <link rel="canonical" href="https://www.ztlab.art/privacy.html" />
   <link rel="stylesheet" href="styles.css" />
+  <script>
+(function(){try{var t=localStorage.getItem('cueai-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
 </head>
 <body>
   <header class="site-header">
@@ -13,6 +20,11 @@
       <a class="logo" href="index.html">Cue<span>AI</span></a>
       <nav class="nav-links">
         <a href="sponsor.html">支持</a>
+        <span class="header-controls">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="切换主题"><span data-theme-label>☀️</span></button>
+          <a class="lang-link" href="privacy.html" hreflang="zh-CN" aria-current="page">中文</a>
+          <a class="lang-link" href="en/privacy.html" hreflang="en">English</a>
+        </span>
         <span class="tagline-nav">按场景选对 AI 工具</span>
       </nav>
     </div>
@@ -31,6 +43,7 @@
         <li><strong>联系我们：</strong>若你发送邮件至 qddceo@mail.grokbot.com，我们会处理你在邮件中提供的内容，以便回复。</li>
         <li><strong>付费与赞助：</strong>若你通过 Creem 结账购买数字商品或赞助，支付与账单信息由 Creem（Merchant of Record）按其隐私政策处理；我们可能收到订单相关的非敏感信息（如邮箱、商品、金额），用于履约与客服。</li>
         <li><strong>联盟链接：</strong>点击带联盟参数的外链时，第三方工具厂商或其联盟平台可能按各自政策设置 Cookie 或记录归因信息。我们不控制这些第三方。</li>
+        <li><strong>本地偏好：</strong>主题（亮/暗）偏好保存在你浏览器的 localStorage 中，仅用于本站显示，不会上传到我们的服务器。</li>
       </ul>
       <h2>我们如何使用信息</h2>
       <p>仅用于运营本站、回复咨询、交付已购数字内容，以及改进目录内容。我们不会出售你的个人信息。</p>
@@ -52,5 +65,6 @@
       <p class="aff">本站含联盟链接</p>
     </div>
   </footer>
+  <script src="site.js" defer></script>
 </body>
 </html>

@@ -3,9 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="写作场景 AI 工具推荐 — CueAI" />
+  <meta name="description" content="写作场景 AI 工具推荐 — CueAI：ChatGPT、Claude、Notion AI、Grammarly 选型对比。" />
   <title>写作 — CueAI</title>
+  <link rel="alternate" hreflang="zh-CN" href="https://www.ztlab.art/writing.html" />
+  <link rel="alternate" hreflang="en" href="https://www.ztlab.art/en/writing.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ztlab.art/" />
+  <link rel="canonical" href="https://www.ztlab.art/writing.html" />
   <link rel="stylesheet" href="styles.css" />
+  <script>
+(function(){try{var t=localStorage.getItem('cueai-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
 </head>
 <body>
   <header class="site-header">
@@ -13,18 +20,21 @@
       <a class="logo" href="index.html">Cue<span>AI</span></a>
       <nav class="nav-links">
         <a href="sponsor.html">支持</a>
+        <span class="header-controls">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="切换主题"><span data-theme-label>☀️</span></button>
+          <a class="lang-link" href="writing.html" hreflang="zh-CN" aria-current="page">中文</a>
+          <a class="lang-link" href="en/writing.html" hreflang="en">English</a>
+        </span>
         <span class="tagline-nav">按场景选对 AI 工具</span>
       </nav>
     </div>
   </header>
-
   <main>
     <div class="page-head wrap">
       <nav class="breadcrumb"><a href="index.html">首页</a> / 写作</nav>
       <h1>✍️ 写作</h1>
       <p class="desc">适合周报、营销文案、长文起草、翻译与润色。下面按「定位 / 适合 / 不适合 / 起步价」对比几款常见工具。</p>
     </div>
-
     <section class="tools wrap">
       <article class="tool">
         <div class="tool-top">
@@ -46,7 +56,6 @@
           <a class="btn btn-primary" href="https://chatgpt.com/?ref=cueai" target="_blank" rel="noopener noreferrer">官网</a>
         </div>
       </article>
-
       <article class="tool">
         <div class="tool-top">
           <h2>Claude</h2>
@@ -67,7 +76,6 @@
           <a class="btn btn-primary" href="https://claude.ai/?ref=cueai" target="_blank" rel="noopener noreferrer">官网</a>
         </div>
       </article>
-
       <article class="tool">
         <div class="tool-top">
           <h2>Notion AI</h2>
@@ -88,7 +96,6 @@
           <a class="btn btn-primary" href="https://www.notion.com/product/ai?ref=cueai" target="_blank" rel="noopener noreferrer">官网</a>
         </div>
       </article>
-
       <article class="tool">
         <div class="tool-top">
           <h2>Grammarly</h2>
@@ -109,9 +116,9 @@
           <a class="btn btn-primary" href="https://www.grammarly.com/?ref=cueai" target="_blank" rel="noopener noreferrer">官网</a>
         </div>
       </article>
+
     </section>
   </main>
-
   <footer class="site-footer">
     <div class="wrap">
       <p><strong>CueAI</strong> · 按场景选对 AI 工具</p>
@@ -121,5 +128,6 @@
       <p class="aff">本站含联盟链接</p>
     </div>
   </footer>
+  <script src="site.js" defer></script>
 </body>
 </html>

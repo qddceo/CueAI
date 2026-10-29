@@ -5,7 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="CueAI — 按场景选对 AI 工具。写作、图像、视频、编程、办公、客服场景选型指南。" />
   <title>CueAI — 按场景选对 AI 工具</title>
+  <link rel="alternate" hreflang="zh-CN" href="https://www.ztlab.art/" />
+  <link rel="alternate" hreflang="en" href="https://www.ztlab.art/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ztlab.art/" />
+  <link rel="canonical" href="https://www.ztlab.art/" />
+  <meta property="og:title" content="CueAI — 按场景选对 AI 工具" />
+  <meta property="og:description" content="按真实使用场景整理主流 AI 工具：适合什么、不适合什么、起步价多少。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.ztlab.art/" />
+  <meta property="og:site_name" content="CueAI" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="CueAI — 按场景选对 AI 工具" />
+  <meta name="twitter:description" content="按真实使用场景整理主流 AI 工具：适合什么、不适合什么、起步价多少。" />
   <link rel="stylesheet" href="styles.css" />
+  <script>
+(function(){try{var t=localStorage.getItem('cueai-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
 </head>
 <body>
   <header class="site-header">
@@ -13,11 +30,15 @@
       <a class="logo" href="index.html">Cue<span>AI</span></a>
       <nav class="nav-links">
         <a href="sponsor.html">支持</a>
+        <span class="header-controls">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="切换主题"><span data-theme-label>☀️</span></button>
+          <a class="lang-link" href="index.html" hreflang="zh-CN" aria-current="page">中文</a>
+          <a class="lang-link" href="en/index.html" hreflang="en">English</a>
+        </span>
         <span class="tagline-nav">按场景选对 AI 工具</span>
       </nav>
     </div>
   </header>
-
   <main>
     <section class="hero wrap">
       <div class="badge">公开免费目录 · 含联盟链接</div>
@@ -68,7 +89,6 @@
       <p class="note">提示：起步价会随官方调整变化，以各产品官网为准。本站链接可能含联盟参数，不影响你的使用体验。</p>
     </section>
   </main>
-
   <footer class="site-footer">
     <div class="wrap">
       <p><strong>CueAI</strong> · 按场景选对 AI 工具</p>
@@ -78,5 +98,6 @@
       <p class="aff">本站含联盟链接</p>
     </div>
   </footer>
+  <script src="site.js" defer></script>
 </body>
 </html>

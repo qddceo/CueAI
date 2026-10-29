@@ -3,9 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="支持 CueAI — 赞助与场景选型清单" />
+  <meta name="description" content="支持 CueAI — 赞助与场景选型清单（Creem 结账）" />
   <title>支持 / 赞助 — CueAI</title>
+  <link rel="alternate" hreflang="zh-CN" href="https://www.ztlab.art/sponsor.html" />
+  <link rel="alternate" hreflang="en" href="https://www.ztlab.art/en/sponsor.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ztlab.art/" />
+  <link rel="canonical" href="https://www.ztlab.art/sponsor.html" />
   <link rel="stylesheet" href="styles.css" />
+  <script>
+(function(){try{var t=localStorage.getItem('cueai-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
 </head>
 <body>
   <header class="site-header">
@@ -13,6 +20,11 @@
       <a class="logo" href="index.html">Cue<span>AI</span></a>
       <nav class="nav-links">
         <a href="sponsor.html">支持</a>
+        <span class="header-controls">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="切换主题"><span data-theme-label>☀️</span></button>
+          <a class="lang-link" href="sponsor.html" hreflang="zh-CN" aria-current="page">中文</a>
+          <a class="lang-link" href="en/sponsor.html" hreflang="en">English</a>
+        </span>
         <span class="tagline-nav">按场景选对 AI 工具</span>
       </nav>
     </div>
@@ -73,5 +85,6 @@
       <p class="aff">本站含联盟链接</p>
     </div>
   </footer>
+  <script src="site.js" defer></script>
 </body>
 </html>
