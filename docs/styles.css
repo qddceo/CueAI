@@ -310,3 +310,76 @@ a:hover { text-decoration: underline; }
   font-size: 0.85rem;
   color: var(--muted);
 }
+
+/* Legal / prose pages */
+.prose {
+  padding: 0 0 3rem;
+  max-width: 40rem;
+}
+.prose h2 {
+  font-size: 1.15rem;
+  margin: 1.75rem 0 0.5rem;
+}
+.prose p, .prose li {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+.prose ul {
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+.prose li { margin-bottom: 0.35rem; }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-links a {
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.nav-links a:hover { color: var(--accent); text-decoration: none; }
+
+.footer-links { margin-bottom: 0.5rem !important; }
+.footer-links a { color: var(--muted); }
+.footer-links a:hover { color: var(--accent); }
+
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 0 0 2.5rem;
+}
+.price-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.35rem 1.25rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.price-card h2 { font-size: 1.1rem; }
+.price-card .amount {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--green);
+}
+.price-card .amount span {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+.price-card p { color: var(--muted); font-size: 0.9rem; flex: 1; }
+.btn-disabled {
+  background: var(--surface-hover);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.hero-cta { margin-top: 1.25rem; }
