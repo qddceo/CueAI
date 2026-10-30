@@ -1,6 +1,6 @@
 /**
  * CueAI site chrome: theme (dark default) + early apply to avoid FOUC.
- * Language is static links between / and /en/.
+ * Language is a static globe toggle between / (EN) and /zh/.
  */
 (function () {
   var KEY = "cueai-theme";

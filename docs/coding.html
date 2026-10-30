@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="编程场景 AI 工具推荐 — CueAI：Copilot、Cursor、Claude、ChatGPT。" />
-  <title>编程 — CueAI</title>
-  <link rel="alternate" hreflang="zh-CN" href="https://www.ztlab.art/coding.html" />
-  <link rel="alternate" hreflang="en" href="https://www.ztlab.art/en/coding.html" />
-  <link rel="alternate" hreflang="x-default" href="https://www.ztlab.art/" />
+  <meta name="description" content="AI tools for coding — CueAI: Copilot, Cursor, Claude, ChatGPT." />
+  <title>Coding — CueAI</title>
+  <link rel="alternate" hreflang="zh-CN" href="https://www.ztlab.art/zh/coding.html" />
+  <link rel="alternate" hreflang="en" href="https://www.ztlab.art/coding.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ztlab.art/coding.html" />
   <link rel="canonical" href="https://www.ztlab.art/coding.html" />
   <link rel="stylesheet" href="styles.css" />
   <script>
@@ -19,118 +19,116 @@
     <div class="wrap">
       <a class="logo" href="index.html">Cue<span>AI</span></a>
       <nav class="nav-links">
-        <a href="sponsor.html">支持</a>
+        <a href="sponsor.html">Support</a>
         <span class="header-controls">
-          <button type="button" class="theme-toggle" data-theme-toggle aria-label="切换主题"><span data-theme-label>☀️</span></button>
-          <a class="lang-link" href="coding.html" hreflang="zh-CN" aria-current="page">中文</a>
-          <a class="lang-link" href="en/coding.html" hreflang="en">English</a>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle theme"><span data-theme-label>☀️</span></button>
+          <a class="lang-toggle" href="zh/coding.html" hreflang="zh-CN" title="中文" aria-label="Switch to Chinese">🌐</a>
         </span>
-        <span class="tagline-nav">按场景选对 AI 工具</span>
       </nav>
     </div>
   </header>
   <main>
     <div class="page-head wrap">
-      <nav class="breadcrumb"><a href="index.html">首页</a> / 编程</nav>
-      <h1>💻 编程</h1>
-      <p class="desc">代码补全、调试、重构与多文件协作。AI 生成代码务必人工审查后再合入生产。</p>
+      <nav class="breadcrumb"><a href="index.html">Home</a> / Coding</nav>
+      <h1>💻 Coding</h1>
+      <p class="desc">Code completion, debugging, refactoring, and multi-file collaboration. Always review AI-generated code before production.</p>
     </div>
     <section class="tools wrap">
       <article class="tool">
         <div class="tool-top">
           <h2>GitHub Copilot</h2>
-          <span class="price">起步价：Individual 约 $10/月 · 有学生/开源优惠</span>
+          <span class="price">From: Individual ~$10/mo · student/OSS discounts</span>
         </div>
-        <p class="one-liner">一句话定位：在常用 IDE 里做行内补全与聊天式改代码。</p>
+        <p class="one-liner">In one line: inline completion and chat-based edits inside popular IDEs.</p>
         <div class="tool-meta">
           <div class="meta-block fit">
-            <h3>适合</h3>
-            <p>VS Code / JetBrains 用户；日常补全、写测试、解释陌生代码。</p>
+            <h3>Best for</h3>
+            <p>VS Code / JetBrains users; daily completion, tests, explaining unfamiliar code.</p>
           </div>
           <div class="meta-block nofit">
-            <h3>不适合</h3>
-            <p>完全禁止云端代码外传的受限环境（需确认企业合规方案）。</p>
+            <h3>Not ideal for</h3>
+            <p>Air-gapped / no-cloud-code policies (check enterprise compliance options).</p>
           </div>
         </div>
         <div class="tool-actions">
-          <a class="btn btn-primary" href="https://github.com/features/copilot?ref=cueai" target="_blank" rel="noopener noreferrer">官网</a>
+          <a class="btn btn-primary" href="https://github.com/features/copilot?ref=cueai" target="_blank" rel="noopener noreferrer">Website</a>
         </div>
       </article>
       <article class="tool">
         <div class="tool-top">
           <h2>Cursor</h2>
-          <span class="price">起步价：有免费档 · Pro 订阅按月</span>
+          <span class="price">From: free tier · Pro monthly</span>
         </div>
-        <p class="one-liner">一句话定位：以 AI 为中心的代码编辑器，擅长多文件理解与项目级改动。</p>
+        <p class="one-liner">In one line: AI-first code editor strong at multi-file understanding and project-wide changes.</p>
         <div class="tool-meta">
           <div class="meta-block fit">
-            <h3>适合</h3>
-            <p>希望「在整个仓库里聊着改」的个人开发者与小团队。</p>
+            <h3>Best for</h3>
+            <p>Solo / small teams who want to chat their way through the whole repo.</p>
           </div>
           <div class="meta-block nofit">
-            <h3>不适合</h3>
-            <p>必须锁定公司统一 IDE 插件策略、且无法更换编辑器的场景。</p>
+            <h3>Not ideal for</h3>
+            <p>Orgs locked to a mandatory IDE plugin stack that can’t switch editors.</p>
           </div>
         </div>
         <div class="tool-actions">
-          <a class="btn btn-primary" href="https://cursor.com/?ref=cueai" target="_blank" rel="noopener noreferrer">官网</a>
+          <a class="btn btn-primary" href="https://cursor.com/?ref=cueai" target="_blank" rel="noopener noreferrer">Website</a>
         </div>
       </article>
       <article class="tool">
         <div class="tool-top">
           <h2>Claude</h2>
-          <span class="price">起步价：有免费档 · Pro 约 $20/月</span>
+          <span class="price">From: free tier · Pro ~$20/mo</span>
         </div>
-        <p class="one-liner">一句话定位：强于读长代码、写方案与分步实现，可配合 Artifacts / 项目空间使用。</p>
+        <p class="one-liner">In one line: strong at reading long code, writing plans, and step-by-step implementation (Artifacts / projects).</p>
         <div class="tool-meta">
           <div class="meta-block fit">
-            <h3>适合</h3>
-            <p>架构讨论、大段重构思路、文档与代码对照阅读。</p>
+            <h3>Best for</h3>
+            <p>Architecture discussions, large refactors, reading docs against code.</p>
           </div>
           <div class="meta-block nofit">
-            <h3>不适合</h3>
-            <p>需要深度嵌进本地 IDE 行内补全且不想切换窗口的工作流（可另配扩展）。</p>
+            <h3>Not ideal for</h3>
+            <p>Deep inline IDE completion without leaving the editor (pair with an extension).</p>
           </div>
         </div>
         <div class="tool-actions">
-          <a class="btn btn-primary" href="https://claude.ai/?ref=cueai" target="_blank" rel="noopener noreferrer">官网</a>
+          <a class="btn btn-primary" href="https://claude.ai/?ref=cueai" target="_blank" rel="noopener noreferrer">Website</a>
         </div>
       </article>
       <article class="tool">
         <div class="tool-top">
           <h2>ChatGPT</h2>
-          <span class="price">起步价：有免费档 · Plus 约 $20/月</span>
+          <span class="price">From: free tier · Plus ~$20/mo</span>
         </div>
-        <p class="one-liner">一句话定位：通用编程问答与小段代码生成，生态广、上手成本低。</p>
+        <p class="one-liner">In one line: general coding Q&amp;A and small snippet generation—broad ecosystem, low ramp-up.</p>
         <div class="tool-meta">
           <div class="meta-block fit">
-            <h3>适合</h3>
-            <p>学新 API、写脚本、排查报错思路；配合 Canvas/自定义 GPT。</p>
+            <h3>Best for</h3>
+            <p>Learning APIs, scripts, debugging ideas; Canvas / custom GPTs.</p>
           </div>
           <div class="meta-block nofit">
-            <h3>不适合</h3>
-            <p>对仓库全貌持续索引、或企业私有代码默认不出域的硬性要求（需企业版评估）。</p>
+            <h3>Not ideal for</h3>
+            <p>Continuous whole-repo indexing, or hard “private code never leaves” rules (evaluate enterprise).</p>
           </div>
         </div>
         <div class="tool-actions">
-          <a class="btn btn-primary" href="https://chatgpt.com/?ref=cueai" target="_blank" rel="noopener noreferrer">官网</a>
+          <a class="btn btn-primary" href="https://chatgpt.com/?ref=cueai" target="_blank" rel="noopener noreferrer">Website</a>
         </div>
       </article>
 
     </section>
   </main>
 
-    <aside class="affiliate-cta wrap" aria-label="联盟披露">
-      <p>本站含联盟链接；购买可能给 CueAI 佣金，不影响你的价格。</p>
-      <p class="affiliate-cta-link"><a href="sponsor.html">支持本站 / 赞助 CueAI →</a></p>
+    <aside class="affiliate-cta wrap" aria-label="Affiliate disclosure">
+      <p>This site contains affiliate links; purchases may earn CueAI a commission at no extra cost to you.</p>
+      <p class="affiliate-cta-link"><a href="sponsor.html">Support this site / Sponsor CueAI →</a></p>
     </aside>
   <footer class="site-footer">
     <div class="wrap">
-      <p><strong>CueAI</strong> · 按场景选对 AI 工具</p>
-      <p class="footer-links"><a href="sponsor.html">支持 / 赞助</a> · <a href="about.html">关于</a> · <a href="privacy.html">隐私政策</a> · <a href="terms.html">服务条款</a></p>
-      <p>客服邮箱：<a href="mailto:qddceo@mail.grokbot.com">qddceo@mail.grokbot.com</a></p>
-      <p>免责声明：本站信息仅供参考，不构成购买建议；功能与定价以各产品官方最新说明为准。本站与所列出的工具厂商无隶属关系，除非另行注明。付费商品由 Creem 作为登记商户（Merchant of Record）处理结账与税务。</p>
-      <p class="aff">本站含联盟链接</p>
+      <p><strong>CueAI</strong></p>
+      <p class="footer-links"><a href="sponsor.html">Support / Sponsor</a> · <a href="about.html">About</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+      <p>Support email: <a href="mailto:qddceo@mail.grokbot.com">qddceo@mail.grokbot.com</a></p>
+      <p>Disclaimer: Information on this site is for reference only and is not purchasing advice. Features and pricing are subject to each product’s official docs. CueAI is not affiliated with listed vendors unless stated. Paid products are checked out by Creem as Merchant of Record (payments &amp; tax).</p>
+      <p class="aff">This site contains affiliate links</p>
     </div>
   </footer>
   <script src="site.js" defer></script>
