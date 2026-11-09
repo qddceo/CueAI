@@ -437,6 +437,46 @@ a:hover { text-decoration: underline; }
 }
 .hero-cta { margin-top: 1.25rem; }
 
+/* Scenario guides */
+.page-head .guide-link {
+  margin-top: 0.85rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.guide-strip {
+  padding: 0.25rem 0 2.25rem;
+}
+
+.guide-strip h2 {
+  font-size: 1.15rem;
+  margin-bottom: 0.35rem;
+}
+
+.guide-strip > p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  max-width: 40rem;
+}
+
+.guide-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.15rem;
+  margin-top: 0.85rem;
+}
+
+.guide-links a {
+  font-weight: 600;
+}
+
+.prose .cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0.35rem 0 1rem;
+}
+
 /* Affiliate disclosure CTA */
 .affiliate-cta {
   margin: 0 auto 1.75rem;

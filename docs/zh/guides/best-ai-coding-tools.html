@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="怎么选编程 AI：按编辑器、仓库范围和代码是否出域，对比 GitHub Copilot、Cursor、Claude 与 ChatGPT。" />
+  <title>怎么选编程 AI — CueAI</title>
+  <link rel="alternate" hreflang="zh-CN" href="https://www.ztlab.art/zh/guides/best-ai-coding-tools.html" />
+  <link rel="alternate" hreflang="en" href="https://www.ztlab.art/guides/best-ai-coding-tools.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ztlab.art/guides/best-ai-coding-tools.html" />
+  <link rel="canonical" href="https://www.ztlab.art/zh/guides/best-ai-coding-tools.html" />
+  <meta property="og:title" content="怎么选编程 AI — CueAI" />
+  <meta property="og:description" content="按真实编程任务选型：留在现有 IDE、换 AI 编辑器，或用对话写方案与小段代码。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.ztlab.art/zh/guides/best-ai-coding-tools.html" />
+  <meta property="og:site_name" content="CueAI" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="怎么选编程 AI — CueAI" />
+  <meta name="twitter:description" content="按真实编程任务选型：留在现有 IDE、换 AI 编辑器，或用对话写方案与小段代码。" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <script>
+(function(){try{var t=localStorage.getItem('cueai-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"怎么选编程 AI","inLanguage":"zh-CN","dateModified":"2026-11-09","mainEntityOfPage":"https://www.ztlab.art/zh/guides/best-ai-coding-tools.html","publisher":{"@type":"Organization","name":"CueAI","url":"https://www.ztlab.art/"}}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="../index.html">Cue<span>AI</span></a>
+      <nav class="nav-links">
+        <a href="../sponsor.html">支持</a>
+        <span class="header-controls">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="切换主题"><span data-theme-label>☀️</span></button>
+          <a class="lang-toggle" href="../../guides/best-ai-coding-tools.html" hreflang="en" title="English" aria-label="Switch to English">🌐</a>
+        </span>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="page-head wrap">
+      <nav class="breadcrumb"><a href="../index.html">首页</a> / <a href="../coding.html">编程</a> / 怎么选</nav>
+      <h1>怎么选编程 AI</h1>
+      <p class="desc">有用的分界不是「哪个模型更聪明」，而是代码待在哪里：你现在的 IDE 里、一个以 AI 为中心的编辑器里，还是一个需要粘贴进去的对话窗口。</p>
+    </div>
+
+    <article class="prose wrap">
+      <h2>先定这几件事</h2>
+      <ul>
+        <li><strong>留在现有编辑器。</strong>团队已经用 VS Code 或 JetBrains，只想要补全、测试和解释时，IDE 助手改动更小。</li>
+        <li><strong>改整个仓库。</strong>要一边聊一边动很多文件，这是另一类产品，和行内补全不是一回事。</li>
+        <li><strong>方案还是按键。</strong>架构讨论、大段重构思路、文档和代码对照，适合上下文更长的对话。这种对话本身替代不了行内补全。</li>
+        <li><strong>代码能不能出域。</strong>隔离网络，或仓库默认不能离开本机，要先看企业合规方案。免费档回答不了这条约束。</li>
+        <li><strong>审查。</strong>生成的代码当草稿。合入生产前看 diff，和看同事的改动一样。</li>
+      </ul>
+      <p>下面的起步价与<a href="../coding.html">编程目录</a>一致。官方只写「Pro 按月」或优惠计划、没有公开单一月费时，这里不补一个数字。</p>
+    </article>
+
+    <section class="tools wrap" aria-label="简短对比">
+      <article class="tool">
+        <div class="tool-top">
+          <h2>GitHub Copilot</h2>
+          <span class="price">起步价：Individual 约 $10/月 · 有学生/开源优惠</span>
+        </div>
+        <p class="one-liner">一句话定位：在常用 IDE 里做行内补全与聊天式改代码。</p>
+        <div class="tool-meta">
+          <div class="meta-block fit">
+            <h3>适合</h3>
+            <p>VS Code / JetBrains 用户；日常补全、写测试、解释陌生代码。</p>
+          </div>
+          <div class="meta-block nofit">
+            <h3>不适合</h3>
+            <p>完全禁止云端代码外传的受限环境（需确认企业合规方案）。</p>
+          </div>
+        </div>
+        <div class="tool-actions">
+          <a class="btn btn-primary" href="https://github.com/features/copilot?ref=cueai" target="_blank" rel="noopener noreferrer">官网</a>
+        </div>
+      </article>
+      <article class="tool">
+        <div class="tool-top">
+          <h2>Cursor</h2>
+          <span class="price">起步价：有免费档 · Pro 订阅按月</span>
+        </div>
+        <p class="one-liner">一句话定位：以 AI 为中心的代码编辑器，擅长多文件理解与项目级改动。</p>
+        <div class="tool-meta">
+          <div class="meta-block fit">
+            <h3>适合</h3>
+            <p>希望「在整个仓库里聊着改」的个人开发者与小团队。</p>
+          </div>
+          <div class="meta-block nofit">
+            <h3>不适合</h3>
+            <p>必须锁定公司统一 IDE 插件策略、且无法更换编辑器的场景。</p>
+          </div>
+        </div>
+        <div class="tool-actions">
+          <a class="btn btn-primary" href="https://cursor.com/?ref=cueai" target="_blank" rel="noopener noreferrer">官网</a>
+        </div>
+      </article>
+      <article class="tool">
+        <div class="tool-top">
+          <h2>Claude</h2>
+          <span class="price">起步价：有免费档 · Pro 约 $20/月</span>
+        </div>
+        <p class="one-liner">一句话定位：强于读长代码、写方案与分步实现，可配合 Artifacts / 项目空间使用。</p>
+        <div class="tool-meta">
+          <div class="meta-block fit">
+            <h3>适合</h3>
+            <p>架构讨论、大段重构思路、文档与代码对照阅读。</p>
+          </div>
+          <div class="meta-block nofit">
+            <h3>不适合</h3>
+            <p>需要深度嵌进本地 IDE 行内补全且不想切换窗口的工作流（可另配扩展）。</p>
+          </div>
+        </div>
+        <div class="tool-actions">
+          <a class="btn btn-primary" href="https://claude.ai/?ref=cueai" target="_blank" rel="noopener noreferrer">官网</a>
+        </div>
+      </article>
+      <article class="tool">
+        <div class="tool-top">
+          <h2>ChatGPT</h2>
+          <span class="price">起步价：有免费档 · Plus 约 $20/月</span>
+        </div>
+        <p class="one-liner">一句话定位：通用编程问答与小段代码生成，生态广、上手成本低。</p>
+        <div class="tool-meta">
+          <div class="meta-block fit">
+            <h3>适合</h3>
+            <p>学新 API、写脚本、排查报错思路；配合 Canvas/自定义 GPT。</p>
+          </div>
+          <div class="meta-block nofit">
+            <h3>不适合</h3>
+            <p>对仓库全貌持续索引、或企业私有代码默认不出域的硬性要求（需企业版评估）。</p>
+          </div>
+        </div>
+        <div class="tool-actions">
+          <a class="btn btn-primary" href="https://chatgpt.com/?ref=cueai" target="_blank" rel="noopener noreferrer">官网</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="prose wrap">
+      <h2>可以这样缩小范围</h2>
+      <ul>
+        <li>编辑器不动，只要边写边补全：GitHub Copilot。</li>
+        <li>可以换编辑器，而且改动跨很多文件：Cursor。</li>
+        <li>先要一份方案，或先把一大段改动读清楚：用 Claude，再回到你信任的编辑器里落地。</li>
+        <li>在学一个 API，或只是排查一小段脚本：ChatGPT 足够起步。代码要留在项目里时，再换 IDE 工具。</li>
+      </ul>
+      <h2>下一步</h2>
+      <p>目录页把同样的「适合 / 不适合 / 起步价」卡片放在一处。</p>
+      <p class="cta-row">
+        <a class="btn btn-primary" href="../coding.html">打开编程目录</a>
+        <a class="btn btn-ghost" href="../sponsor.html">支持本站</a>
+      </p>
+      <p class="guide-links">
+        <a href="best-ai-writing-tools.html">怎么选写作 AI</a>
+        <a href="best-ai-image-tools.html">怎么选图像 AI</a>
+      </p>
+    </section>
+  </main>
+
+  <aside class="affiliate-cta wrap" aria-label="联盟披露">
+    <p>本站含联盟链接；购买可能给 CueAI 佣金，不影响你的价格。</p>
+    <p class="affiliate-cta-link"><a href="../sponsor.html">支持本站 / 赞助 CueAI →</a></p>
+  </aside>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><strong>CueAI</strong></p>
+      <p class="footer-links"><a href="../sponsor.html">支持 / 赞助</a> · <a href="../about.html">关于</a> · <a href="../privacy.html">隐私政策</a> · <a href="../terms.html">服务条款</a></p>
+      <p>客服邮箱：<a href="mailto:qddceo@mail.grokbot.com">qddceo@mail.grokbot.com</a></p>
+      <p>免责声明：本站信息仅供参考，不构成购买建议；功能与定价以各产品官方最新说明为准。本站与所列出的工具厂商无隶属关系，除非另行注明。</p>
+      <p class="aff">本站含联盟链接</p>
+    </div>
+  </footer>
+  <script src="../../site.js" defer></script>
+</body>
+</html>
