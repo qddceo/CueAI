@@ -5,3 +5,5 @@
 - 2026-11-09 增加三篇双语选型指南，英文在 `docs/guides/`，中文在 `docs/zh/guides/`，slug 为 `best-ai-writing-tools.html`、`best-ai-coding-tools.html`、`best-ai-image-tools.html`。
 - 指南复用对应目录页已有工具与起步价表述，不新增无法核对的价格或统计。赞助入口指向 `sponsor.html`。新指南页页脚不点名支付服务商。
 - 入口：首页「Guides / 选型指南」，以及写作、编程、图像目录页标题下的链接。hreflang 的 x-default 指向英文 URL。
+- 2026-11-10 商业骨架：`docs/list-your-tool.html` 与 `docs/disclosure.html`，中文在 `docs/zh/`。`submit.html` 以及 `list-your-tool/`、`submit/`、`disclosure/` 目录索引只做跳转，对应无扩展名 URL。收录表单是 mailto，不接后端。浏览与收录审核免费，付费展示未开放，公开新文案不点名支付服务商。
+- 目录规模按英文场景页 `<article class="tool">` 计数：22 张卡片（写作 4、图像 4、视频 3、编程 4、办公 4、客服 3），中文页同一套。Gamma 联盟链接为 `https://try.gamma.app/3o3igi7q8nfr`，`rel="sponsored"`，用在办公页、首页办公/演示说明和披露页，不新造其他联盟计划。

@@ -496,3 +496,30 @@ a:hover { text-decoration: underline; }
 }
 .affiliate-cta-link a:hover { text-decoration: underline; }
 
+/* Listing inquiry — same surfaces as the rest of the directory */
+.inquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin: 0.5rem 0 1.25rem;
+  max-width: 28rem;
+}
+.inquiry-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.inquiry-form input {
+  font: inherit;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+}
+.inquiry-form button { font-family: inherit; align-self: flex-start; }
+.prose code { font-size: 0.9em; color: var(--text); }
+

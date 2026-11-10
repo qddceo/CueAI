@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ask CueAI to review a tool for the directory. Browsing and listing review are free. Paid placement is not open on this page." />
+  <title>List your tool — CueAI</title>
+  <link rel="alternate" hreflang="zh-CN" href="https://www.ztlab.art/zh/list-your-tool.html" />
+  <link rel="alternate" hreflang="en" href="https://www.ztlab.art/list-your-tool.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ztlab.art/list-your-tool.html" />
+  <link rel="canonical" href="https://www.ztlab.art/list-your-tool.html" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+(function(){try{var t=localStorage.getItem('cueai-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">Cue<span>AI</span></a>
+      <nav class="nav-links">
+        <a href="list-your-tool.html">List your tool</a>
+        <a href="sponsor.html">Support</a>
+        <span class="header-controls">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle theme"><span data-theme-label>☀️</span></button>
+          <a class="lang-toggle" href="zh/list-your-tool.html" hreflang="zh-CN" title="中文" aria-label="Switch to Chinese">🌐</a>
+        </span>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="page-head wrap">
+      <nav class="breadcrumb"><a href="index.html">Home</a> / List your tool</nav>
+      <h1>List your tool</h1>
+      <p class="desc">Send a tool for the directory to review. Updated: 2026-11-10</p>
+    </div>
+    <section class="prose wrap">
+      <p>CueAI is a free directory of AI tools by use case. <strong>Browsing the directory is free, and reviewing a listing request is free.</strong> Paid placement will open later. This page does not take payment and does not show a price.</p>
+      <p>Send the tool name, the official URL, and an email where we can reply. A request is not a promise to list the tool, and it does not buy a higher place in a scenario.</p>
+      <form class="inquiry-form" id="list-inquiry" action="mailto:qddceo@mail.grokbot.com" method="post" enctype="text/plain">
+        <label>Tool name
+          <input name="tool" type="text" required maxlength="120" autocomplete="organization" />
+        </label>
+        <label>Tool URL
+          <input name="url" type="url" required placeholder="https://" inputmode="url" />
+        </label>
+        <label>Contact email
+          <input name="email" type="email" required autocomplete="email" />
+        </label>
+        <button class="btn btn-primary" type="submit">Email this inquiry</button>
+      </form>
+      <p>The button opens your email app with the form filled in, addressed to <a href="mailto:qddceo@mail.grokbot.com">qddceo@mail.grokbot.com</a> — the same support address as the footer. No account and no extra service.</p>
+      <p>How links and sponsorship work: <a href="disclosure.html">Disclosure</a>. Optional support for the site, separate from listings: <a href="sponsor.html">Support / Sponsor</a>.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><strong>CueAI</strong></p>
+      <p class="footer-links"><a href="sponsor.html">Support / Sponsor</a> · <a href="list-your-tool.html">List your tool</a> · <a href="about.html">About</a> · <a href="disclosure.html">Disclosure</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+      <p>Support email: <a href="mailto:qddceo@mail.grokbot.com">qddceo@mail.grokbot.com</a></p>
+      <p>Disclaimer: Information on this site is for reference only and is not purchasing advice. Features and pricing are subject to each product’s official docs. CueAI is not affiliated with listed vendors unless stated.</p>
+      <p class="aff">This site contains affiliate links</p>
+    </div>
+  </footer>
+  <script src="site.js" defer></script>
+  <script>
+  (function () {
+    var form = document.getElementById("list-inquiry");
+    if (!form) return;
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var data = new FormData(form);
+      var tool = String(data.get("tool") || "").trim();
+      var url = String(data.get("url") || "").trim();
+      var email = String(data.get("email") || "").trim();
+      var body = [
+        "Tool name: " + tool,
+        "Tool URL: " + url,
+        "Contact email: " + email,
+        "",
+        "Please review this tool for the CueAI directory.",
+        "I understand browsing and listing review are free, and paid placement is not open on this page."
+      ].join("\n");
+      window.location.href = "mailto:qddceo@mail.grokbot.com?subject=" + encodeURIComponent("CueAI listing inquiry: " + tool) + "&body=" + encodeURIComponent(body);
+    });
+  })();
+  </script>
+</body>
+</html>

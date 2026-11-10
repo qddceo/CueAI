@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="向 CueAI 提交工具，申请收录审核。浏览目录免费，收录审核免费。本页不开放付费展示，也不报价。" />
+  <title>收录你的工具 — CueAI</title>
+  <link rel="alternate" hreflang="zh-CN" href="https://www.ztlab.art/zh/list-your-tool.html" />
+  <link rel="alternate" hreflang="en" href="https://www.ztlab.art/list-your-tool.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ztlab.art/list-your-tool.html" />
+  <link rel="canonical" href="https://www.ztlab.art/zh/list-your-tool.html" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script>
+(function(){try{var t=localStorage.getItem('cueai-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">Cue<span>AI</span></a>
+      <nav class="nav-links">
+        <a href="list-your-tool.html">收录工具</a>
+        <a href="sponsor.html">支持</a>
+        <span class="header-controls">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="切换主题"><span data-theme-label>☀️</span></button>
+          <a class="lang-toggle" href="../list-your-tool.html" hreflang="en" title="English" aria-label="Switch to English">🌐</a>
+        </span>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="page-head wrap">
+      <nav class="breadcrumb"><a href="index.html">首页</a> / 收录工具</nav>
+      <h1>收录你的工具</h1>
+      <p class="desc">把工具发给目录审核。更新日期：2026-11-10</p>
+    </div>
+    <section class="prose wrap">
+      <p>CueAI 是按使用场景整理的免费 AI 工具目录。<strong>浏览目录免费，收录审核也免费。</strong>付费展示以后才会开放。本页不收款，也不标价格。</p>
+      <p>请留下工具名称、官方网址，以及我们可以回复的邮箱。提交不等于一定收录，也不能购买某个场景里更靠前的位置。</p>
+      <form class="inquiry-form" id="list-inquiry" action="mailto:qddceo@mail.grokbot.com" method="post" enctype="text/plain">
+        <label>工具名称
+          <input name="tool" type="text" required maxlength="120" autocomplete="organization" />
+        </label>
+        <label>工具网址
+          <input name="url" type="url" required placeholder="https://" inputmode="url" />
+        </label>
+        <label>联系邮箱
+          <input name="email" type="email" required autocomplete="email" />
+        </label>
+        <button class="btn btn-primary" type="submit">用邮件发送这条咨询</button>
+      </form>
+      <p>按钮会打开你的邮件软件，正文已填好，收件人是 <a href="mailto:qddceo@mail.grokbot.com">qddceo@mail.grokbot.com</a>，与页脚客服邮箱相同。不需要账号，也不经过别的表单服务。</p>
+      <p>链接和赞助怎么处理，见 <a href="disclosure.html">披露说明</a>。想支持站点本身、与收录无关，走 <a href="sponsor.html">支持 / 赞助</a>。</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><strong>CueAI</strong></p>
+      <p class="footer-links"><a href="sponsor.html">支持 / 赞助</a> · <a href="list-your-tool.html">收录工具</a> · <a href="about.html">关于</a> · <a href="disclosure.html">披露说明</a> · <a href="privacy.html">隐私政策</a> · <a href="terms.html">服务条款</a></p>
+      <p>客服邮箱：<a href="mailto:qddceo@mail.grokbot.com">qddceo@mail.grokbot.com</a></p>
+      <p>免责声明：本站信息仅供参考，不构成购买建议；功能与定价以各产品官方最新说明为准。本站与所列出的工具厂商无隶属关系，除非另行注明。</p>
+      <p class="aff">本站含联盟链接</p>
+    </div>
+  </footer>
+  <script src="../site.js" defer></script>
+  <script>
+  (function () {
+    var form = document.getElementById("list-inquiry");
+    if (!form) return;
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var data = new FormData(form);
+      var tool = String(data.get("tool") || "").trim();
+      var url = String(data.get("url") || "").trim();
+      var email = String(data.get("email") || "").trim();
+      var body = [
+        "工具名称: " + tool,
+        "工具网址: " + url,
+        "联系邮箱: " + email,
+        "",
+        "请审核是否收录到 CueAI 目录。",
+        "我了解浏览和收录审核免费，本页尚未开放付费展示。"
+      ].join("\n");
+      window.location.href = "mailto:qddceo@mail.grokbot.com?subject=" + encodeURIComponent("CueAI 收录咨询: " + tool) + "&body=" + encodeURIComponent(body);
+    });
+  })();
+  </script>
+</body>
+</html>
