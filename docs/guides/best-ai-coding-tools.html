@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="How to choose an AI coding tool: GitHub Copilot, Cursor, Claude, and ChatGPT compared by editor, repo scope, and code policy." />
+  <title>Best AI Coding Tools: How to Choose — CueAI</title>
+  <link rel="alternate" hreflang="zh-CN" href="https://www.ztlab.art/zh/guides/best-ai-coding-tools.html" />
+  <link rel="alternate" hreflang="en" href="https://www.ztlab.art/guides/best-ai-coding-tools.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ztlab.art/guides/best-ai-coding-tools.html" />
+  <link rel="canonical" href="https://www.ztlab.art/guides/best-ai-coding-tools.html" />
+  <meta property="og:title" content="Best AI Coding Tools: How to Choose — CueAI" />
+  <meta property="og:description" content="A scenario guide for picking a coding AI: inline completion, repo-wide edits, or a chat for plans and snippets." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.ztlab.art/guides/best-ai-coding-tools.html" />
+  <meta property="og:site_name" content="CueAI" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Best AI Coding Tools: How to Choose — CueAI" />
+  <meta name="twitter:description" content="A scenario guide for picking a coding AI: inline completion, repo-wide edits, or a chat for plans and snippets." />
+  <link rel="stylesheet" href="../styles.css" />
+  <script>
+(function(){try{var t=localStorage.getItem('cueai-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Best AI coding tools: how to choose","inLanguage":"en","dateModified":"2026-11-09","mainEntityOfPage":"https://www.ztlab.art/guides/best-ai-coding-tools.html","publisher":{"@type":"Organization","name":"CueAI","url":"https://www.ztlab.art/"}}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="../index.html">Cue<span>AI</span></a>
+      <nav class="nav-links">
+        <a href="../sponsor.html">Support</a>
+        <span class="header-controls">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle theme"><span data-theme-label>☀️</span></button>
+          <a class="lang-toggle" href="../zh/guides/best-ai-coding-tools.html" hreflang="zh-CN" title="中文" aria-label="Switch to Chinese">🌐</a>
+        </span>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="page-head wrap">
+      <nav class="breadcrumb"><a href="../index.html">Home</a> / <a href="../coding.html">Coding</a> / How to choose</nav>
+      <h1>Best AI coding tools: how to choose</h1>
+      <p class="desc">The useful split is not “which model is smartest.” It is where the code lives while you work: inside the IDE you already use, in an AI-first editor, or in a chat you paste into.</p>
+    </div>
+
+    <article class="prose wrap">
+      <h2>What to decide first</h2>
+      <ul>
+        <li><strong>Stay in the current editor.</strong> If the team is on VS Code or JetBrains and only wants completion, tests, and explanations, an IDE assistant is the smaller change.</li>
+        <li><strong>Whole-repo edits.</strong> If you want to talk through several files and apply project-wide changes, an AI-first editor is a different product from inline completion.</li>
+        <li><strong>Plans versus keystrokes.</strong> Architecture notes, long refactors, and reading docs next to code fit a chat with a large context window. That chat will not replace inline completion by itself.</li>
+        <li><strong>Code policy.</strong> Air-gapped work and “this repository must not leave the machine” rules need an enterprise or compliance check before any cloud assistant. A free tier is not an answer to that constraint.</li>
+        <li><strong>Review.</strong> Treat generated code as a draft. Read the diff before it reaches production, the same way you would review a teammate.</li>
+      </ul>
+      <p>Starting prices below match the <a href="../coding.html">coding directory</a>. Where a vendor only publishes “Pro monthly” or a discount program, this page does not invent a dollar figure.</p>
+    </article>
+
+    <section class="tools wrap" aria-label="Short comparison">
+      <article class="tool">
+        <div class="tool-top">
+          <h2>GitHub Copilot</h2>
+          <span class="price">From: Individual ~$10/mo · student/OSS discounts</span>
+        </div>
+        <p class="one-liner">In one line: inline completion and chat-based edits inside popular IDEs.</p>
+        <div class="tool-meta">
+          <div class="meta-block fit">
+            <h3>Best for</h3>
+            <p>VS Code / JetBrains users; daily completion, tests, explaining unfamiliar code.</p>
+          </div>
+          <div class="meta-block nofit">
+            <h3>Not ideal for</h3>
+            <p>Air-gapped / no-cloud-code policies (check enterprise compliance options).</p>
+          </div>
+        </div>
+        <div class="tool-actions">
+          <a class="btn btn-primary" href="https://github.com/features/copilot?ref=cueai" target="_blank" rel="noopener noreferrer">Website</a>
+        </div>
+      </article>
+      <article class="tool">
+        <div class="tool-top">
+          <h2>Cursor</h2>
+          <span class="price">From: free tier · Pro monthly</span>
+        </div>
+        <p class="one-liner">In one line: AI-first code editor strong at multi-file understanding and project-wide changes.</p>
+        <div class="tool-meta">
+          <div class="meta-block fit">
+            <h3>Best for</h3>
+            <p>Solo / small teams who want to chat their way through the whole repo.</p>
+          </div>
+          <div class="meta-block nofit">
+            <h3>Not ideal for</h3>
+            <p>Orgs locked to a mandatory IDE plugin stack that can’t switch editors.</p>
+          </div>
+        </div>
+        <div class="tool-actions">
+          <a class="btn btn-primary" href="https://cursor.com/?ref=cueai" target="_blank" rel="noopener noreferrer">Website</a>
+        </div>
+      </article>
+      <article class="tool">
+        <div class="tool-top">
+          <h2>Claude</h2>
+          <span class="price">From: free tier · Pro ~$20/mo</span>
+        </div>
+        <p class="one-liner">In one line: strong at reading long code, writing plans, and step-by-step implementation (Artifacts / projects).</p>
+        <div class="tool-meta">
+          <div class="meta-block fit">
+            <h3>Best for</h3>
+            <p>Architecture discussions, large refactors, reading docs against code.</p>
+          </div>
+          <div class="meta-block nofit">
+            <h3>Not ideal for</h3>
+            <p>Deep inline IDE completion without leaving the editor (pair with an extension).</p>
+          </div>
+        </div>
+        <div class="tool-actions">
+          <a class="btn btn-primary" href="https://claude.ai/?ref=cueai" target="_blank" rel="noopener noreferrer">Website</a>
+        </div>
+      </article>
+      <article class="tool">
+        <div class="tool-top">
+          <h2>ChatGPT</h2>
+          <span class="price">From: free tier · Plus ~$20/mo</span>
+        </div>
+        <p class="one-liner">In one line: general coding Q&amp;A and small snippet generation—broad ecosystem, low ramp-up.</p>
+        <div class="tool-meta">
+          <div class="meta-block fit">
+            <h3>Best for</h3>
+            <p>Learning APIs, scripts, debugging ideas; Canvas / custom GPTs.</p>
+          </div>
+          <div class="meta-block nofit">
+            <h3>Not ideal for</h3>
+            <p>Continuous whole-repo indexing, or hard “private code never leaves” rules (evaluate enterprise).</p>
+          </div>
+        </div>
+        <div class="tool-actions">
+          <a class="btn btn-primary" href="https://chatgpt.com/?ref=cueai" target="_blank" rel="noopener noreferrer">Website</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="prose wrap">
+      <h2>A practical shortlist</h2>
+      <ul>
+        <li>Keep your IDE and want completion while you type: GitHub Copilot.</li>
+        <li>You can change editors and the work spans many files: Cursor.</li>
+        <li>You need a written plan or a careful read of a large change before touching the repo: Claude, then apply the result in the editor you trust.</li>
+        <li>You are learning an API or debugging a small script: ChatGPT is enough to start. Move to an IDE tool once the code has to stay in the project.</li>
+      </ul>
+      <h2>Next step</h2>
+      <p>The directory page keeps the same fit / not-a-fit / starting-price cards in one place.</p>
+      <p class="cta-row">
+        <a class="btn btn-primary" href="../coding.html">Open the coding directory</a>
+        <a class="btn btn-ghost" href="../sponsor.html">Support this site</a>
+      </p>
+      <p class="guide-links">
+        <a href="best-ai-writing-tools.html">Best AI writing tools</a>
+        <a href="best-ai-image-tools.html">Best AI image tools</a>
+      </p>
+    </section>
+  </main>
+
+  <aside class="affiliate-cta wrap" aria-label="Affiliate disclosure">
+    <p>This site contains affiliate links; purchases may earn CueAI a commission at no extra cost to you.</p>
+    <p class="affiliate-cta-link"><a href="../sponsor.html">Support this site / Sponsor CueAI →</a></p>
+  </aside>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><strong>CueAI</strong></p>
+      <p class="footer-links"><a href="../sponsor.html">Support / Sponsor</a> · <a href="../about.html">About</a> · <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a></p>
+      <p>Support email: <a href="mailto:qddceo@mail.grokbot.com">qddceo@mail.grokbot.com</a></p>
+      <p>Disclaimer: Information on this site is for reference only and is not purchasing advice. Features and pricing are subject to each product’s official docs. CueAI is not affiliated with listed vendors unless stated.</p>
+      <p class="aff">This site contains affiliate links</p>
+    </div>
+  </footer>
+  <script src="../site.js" defer></script>
+</body>
+</html>

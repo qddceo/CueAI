@@ -24,7 +24,9 @@ CueAI/
     ├── video.html      # 视频
     ├── coding.html     # 编程
     ├── office.html     # 办公
-    └── support.html    # 客服
+    ├── support.html    # 客服
+    ├── guides/         # 英文选型长文（写作 / 编程 / 图像）
+    └── zh/guides/      # 对应中文镜像
 ```
 
 ---
